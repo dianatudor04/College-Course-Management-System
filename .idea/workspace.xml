@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="219b0546-d0d8-4a61-8907-642151b3af49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/01-posteaza_medii/01-posteaza_medii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/01-posteaza_medii/01-posteaza_medii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/02-posteaza_medii_contestatii/02-posteaza_medii_contestatii.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/03-posteaza_medii_contestatii/03-posteaza_medii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/03-posteaza_medii_contestatii/03-posteaza_medii_contestatii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/04-posteaza_medii_contestatii/04-posteaza_medii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/04-posteaza_medii_contestatii/04-posteaza_medii_contestatii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/05-inroleaza_simplu/05-inroleaza_simplu.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/05-inroleaza_simplu/05-inroleaza_simplu.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/08-coliziuni_medie/08-coliziuni_medie.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/08-coliziuni_medie/08-coliziuni_medie.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/11-exceptie_simplu/11-exceptie_simplu.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/11-exceptie_simplu/11-exceptie_simplu.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/12-toate_functionalitatile/12-toate_functionalitatile.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/12-toate_functionalitatile/12-toate_functionalitatile.out" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2afsbdiuVUJRWt9OuAvqGMFWO4T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="219b0546-d0d8-4a61-8907-642151b3af49" name="Changes" comment="" />
+      <created>1704721043700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704721043700</updated>
+    </task>
+    <servers />
+  </component>
+</project>

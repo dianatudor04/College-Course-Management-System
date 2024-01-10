@@ -11,10 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Secretariat {
-    private List<StudentLicenta> studentiLicenta = new ArrayList<StudentLicenta>();
-    private List<StudentMaster> studentiMaster = new ArrayList<StudentMaster>();
-    private List<Curs<StudentLicenta>> cursuriLicenta = new ArrayList<Curs<StudentLicenta>>();
-    private List<Curs<StudentMaster>> cursuriMaster = new ArrayList<Curs<StudentMaster>>();
+    private final List<StudentLicenta> studentiLicenta = new ArrayList<StudentLicenta>();
+    private final List<StudentMaster> studentiMaster = new ArrayList<StudentMaster>();
+    private final List<Curs<StudentLicenta>> cursuriLicenta = new ArrayList<Curs<StudentLicenta>>();
+    private final List<Curs<StudentMaster>> cursuriMaster = new ArrayList<Curs<StudentMaster>>();
 
 
     public List<StudentLicenta> getStudentiLicenta() {
@@ -56,13 +56,13 @@ public class Secretariat {
     }
 
     public void adaugaCurs(String program, String nume, Integer capacitate) {
-        Curs curs;
+        Curs<? extends Student> curs;
         if (program.equals("licenta")) {
             curs = new Curs<StudentLicenta>(nume, capacitate);
-            this.getCursuriLicenta().add(curs);
+            this.getCursuriLicenta().add((Curs<StudentLicenta>) curs);
         } else if (program.equals("master")) {
             curs = new Curs<StudentMaster>(nume, capacitate);
-            this.getCursuriMaster().add(curs);
+            this.getCursuriMaster().add((Curs<StudentMaster>) curs);
         }
     }
 
@@ -120,46 +120,56 @@ public class Secretariat {
     }
 
     public void repartizeaza() {
-        List<StudentLicenta> studentiLicenta = new ArrayList<>(this.getStudentiLicenta());
-        studentiLicenta.sort(Comparator.comparing(Student::getMedie).reversed().thenComparing(Student::getNume));
-        for (StudentLicenta student: studentiLicenta)
-            for (String preferinta: student.getPreferinte()) {
-                Curs<StudentLicenta> curs = null;
-                for (Curs<StudentLicenta> cursLicenta: this.getCursuriLicenta())
-                    if (cursLicenta.getNume().equals(preferinta))
-                        curs = cursLicenta;
-                assert curs != null;
-                if (curs.getCapacitate() - curs.getStudenti().size() > 0) {
-                    curs.getStudenti().add(student);
-                    student.setCurs(curs.getNume());
-                    break;
-                } else if (curs.getStudenti().get(curs.getCapacitate() - 1).getMedie() - student.getMedie() == 0) {
-                    curs.getStudenti().add(student);
-                    student.setCurs(curs.getNume());
-                    break;
+        List<Student> studenti = new ArrayList<>(this.getStudentiLicenta());
+        studenti.addAll(this.getStudentiMaster());
+        studenti.sort(Comparator.comparing(Student::getMedie).reversed().thenComparing(Student::getNume));
+        List<Curs<? extends Student>> cursuri = new ArrayList<>();
+        cursuri.addAll(this.getCursuriLicenta());
+        cursuri.addAll(this.getCursuriMaster());
+
+        for (Student student: studenti) {
+            if (student instanceof StudentLicenta) {
+                for (String preferinta : student.getPreferinte()) {
+                    Curs<StudentLicenta> cursPref = null;
+                    for (Curs<? extends Student> curs : cursuri)
+                        if (curs.getNume().equals(preferinta))
+                            cursPref = (Curs<StudentLicenta>) curs;
+                    assert cursPref != null;
+                    if (cursPref.getCapacitate() > cursPref.getStudenti().size()) {
+                        cursPref.getStudenti().add((StudentLicenta) student);
+                        student.setCurs(cursPref.getNume());
+                        break;
+                    } else {
+                        Student ultimulIntrat = (Student) cursPref.getStudenti().get(cursPref.getStudenti().size() - 1);
+                        if (ultimulIntrat.getMedie() - student.getMedie() == 0) {
+                            cursPref.getStudenti().add((StudentLicenta) student);
+                            student.setCurs(cursPref.getNume());
+                            break;
+                        }
+                    }
+                }
+            } else {
+                for (String preferinta : student.getPreferinte()) {
+                    Curs<StudentMaster> cursPref = null;
+                    for (Curs<? extends Student> curs : cursuri)
+                        if (curs.getNume().equals(preferinta))
+                            cursPref = (Curs<StudentMaster>) curs;
+                    assert cursPref != null;
+                    if (cursPref.getCapacitate() > cursPref.getStudenti().size()) {
+                        cursPref.getStudenti().add((StudentMaster) student);
+                        student.setCurs(cursPref.getNume());
+                        break;
+                    } else {
+                        Student ultimulIntrat = (Student) cursPref.getStudenti().get(cursPref.getStudenti().size() - 1);
+                        if (ultimulIntrat.getMedie() - student.getMedie() == 0) {
+                            cursPref.getStudenti().add((StudentMaster) student);
+                            student.setCurs(cursPref.getNume());
+                            break;
+                        }
+                    }
                 }
             }
-
-
-        List<StudentMaster> studentiMaster = new ArrayList<>(this.getStudentiMaster());
-        studentiMaster.sort(Comparator.comparing(Student::getMedie).reversed().thenComparing(Student::getNume));
-        for (StudentMaster student: this.getStudentiMaster())
-            for (String preferinta: student.getPreferinte()) {
-                Curs<StudentMaster> curs = null;
-                for (Curs<StudentMaster> cursMaster: this.getCursuriMaster())
-                    if (cursMaster.getNume().equals(preferinta))
-                        curs = cursMaster;
-                assert curs != null;
-                if (curs.getCapacitate() - curs.getStudenti().size() > 0) {
-                    curs.getStudenti().add(student);
-                    student.setCurs(preferinta);
-                    break;
-                } else if (curs.getStudenti().get(curs.getCapacitate() - 1).getMedie() - student.getMedie() == 0) {
-                    curs.getStudenti().add(student);
-                    student.setCurs(preferinta);
-                    break;
-                }
-            }
+        }
     }
 
     public Curs<? extends Student> gasesteCurs(String nume) {

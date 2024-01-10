@@ -1,13 +1,12 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class Curs<T extends Student> {
     private String nume;
     private Integer capacitate;
-    private List<T> studenti = new ArrayList<>();
+    private final List<T> studenti = new ArrayList<>();
 
     public String getNume() {
         return nume;

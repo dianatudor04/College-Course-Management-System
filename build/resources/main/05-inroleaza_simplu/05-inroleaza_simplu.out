@@ -5,11 +5,15 @@ Carol - 8.0
 ***
 AA (2)
 Alice - 8.5
-Bob - 9.2
+Carol - 8.0
 ***
 SO (1)
-Carol - 8.0
+***
+RL (1)
+Bob - 9.2
 ***
 Student Licenta: Alice - 8.5 - AA
 ***
-Student Licenta: Carol - 8.0 - SO
+Student Licenta: Carol - 8.0 - AA
+***
+Student Licenta: Bob - 9.2 - RL

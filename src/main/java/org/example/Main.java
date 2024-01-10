@@ -27,15 +27,15 @@ public class Main {
                 List<String> date = List.of(linie.split(" - "));
                 switch (date.get(0)) {
                     case "adauga_student":
-                        String program_student = date.get(1);
-                        String nume_student = date.get(2);
-                        s.adaugaStudent(program_student, nume_student, out);
+                        String programStudent = date.get(1);
+                        String numeStudent = date.get(2);
+                        s.adaugaStudent(programStudent, numeStudent, out);
                         break;
                     case "adauga_curs":
-                        String program_curs = date.get(1);
-                        String nume_curs = date.get(2);
+                        String programCurs = date.get(1);
+                        String numeCurs = date.get(2);
                         Integer capacitate = Integer.parseInt(date.get(3));
-                        s.adaugaCurs(program_curs, nume_curs, capacitate);
+                        s.adaugaCurs(programCurs, numeCurs, capacitate);
                         break;
                     case "citeste_mediile":
                         s.citesteMediile("src/main/resources/" + args[0], "note_");
@@ -44,22 +44,24 @@ public class Main {
                         s.posteazaMediile(out);
                         break;
                     case "contestatie":
-                        String nume_contestatie = date.get(1);
-                        Float medie_contestatie = Float.parseFloat(date.get(2));
-                        s.contestatie(nume_contestatie, medie_contestatie);
+                        String numeContestatie = date.get(1);
+                        Float medieContestatie = Float.parseFloat(date.get(2));
+                        s.contestatie(numeContestatie, medieContestatie);
                         break;
                     case "adauga_preferinte":
-                        String nume_stud = date.get(1);
-                        s.adaugaPreferinte(nume_stud, date.subList(2, date.size()));
+                        String numeStud = date.get(1);
+                        s.adaugaPreferinte(numeStud, date.subList(2, date.size()));
                         break;
                     case "repartizeaza":
                         s.repartizeaza();
                         break;
                     case "posteaza_curs":
-                        s.posteazaCurs(date.get(1), out);
+                        String numeC = date.get(1);
+                        s.posteazaCurs(numeC, out);
                         break;
                     case "posteaza_student":
-                        s.posteazaStudent(date.get(1), out);
+                        String numeS = date.get(1);
+                        s.posteazaStudent(numeS, out);
                         break;
                     default:
                         break;

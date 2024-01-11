@@ -6,7 +6,7 @@ import java.util.List;
 public class Curs<T extends Student> {
     private String nume;
     private Integer capacitate;
-    private final List<T> studenti = new ArrayList<>();
+    private final List<T> studenti = new ArrayList<>(); // Lista studenti enrolled la curs
 
     public String getNume() {
         return nume;

@@ -5,36 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="219b0546-d0d8-4a61-8907-642151b3af49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/Secretariat.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/Secretariat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.example.TestMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/org.example.TestMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.example.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/org.example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/05-inroleaza_simplu/05-inroleaza_simplu.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/05-inroleaza_simplu/05-inroleaza_simplu.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/08-coliziuni_medie/08-coliziuni_medie.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/08-coliziuni_medie/08-coliziuni_medie.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/12-toate_functionalitatile/12-toate_functionalitatile.out" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/12-toate_functionalitatile/12-toate_functionalitatile.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.example.TestMain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-org.example.TestMain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Secretariat.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Secretariat.class.uniqueId1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Curs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Curs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Secretariat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Secretariat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/05-inroleaza_simplu/05-inroleaza_simplu.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/05-inroleaza_simplu/05-inroleaza_simplu.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/06-inroleaza_ciclu_studii/06-inroleaza_ciclu_studii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/07-inroleaza_ciclu_studii_contestatii/07-inroleaza_ciclu_studii_contestatii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/08-coliziuni_medie/08-coliziuni_medie.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/08-coliziuni_medie/08-coliziuni_medie.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/09-coliziuni_ciclu_studii/09-coliziuni_ciclu_studii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/10-coliziuni_ciclu_studii_contestatii/10-coliziuni_ciclu_studii_contestatii.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/12-toate_functionalitatile/12-toate_functionalitatile.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/12-toate_functionalitatile/12-toate_functionalitatile.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

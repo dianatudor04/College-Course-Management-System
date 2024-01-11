@@ -51,7 +51,7 @@ public class Student {
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
         return nume.equals(student.getNume());
-    }
+    } //metoda de a verifica ca e acelasi nume
 
     @Override
     public int hashCode() {

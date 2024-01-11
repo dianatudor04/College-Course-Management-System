@@ -13,7 +13,7 @@ public class Main {
         try (BufferedReader br = new BufferedReader(new FileReader(In))) {
             String linie;
             while ((linie = br.readLine()) != null)
-                lista.add(linie);
+                lista.add(linie);  //adaugam liniile de input intr-o coada pentru a preluca linie cu linie. Dupa finalizare stergeam linia.
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -22,9 +22,9 @@ public class Main {
              BufferedWriter bw = new BufferedWriter(fw);
              PrintWriter out = new PrintWriter(bw)) {
             Secretariat s = new Secretariat();
-            while (lista.peek() != null) {
-                String linie = lista.remove();
-                List<String> date = List.of(linie.split(" - "));
+            while (lista.peek() != null) { //cat timp exista elemente in lista
+                String linie = lista.remove(); //scot primul element din coada
+                List<String> date = List.of(linie.split(" - ")); //elemente separate de "-". Retinem fiecare elem intr-o lista
                 switch (date.get(0)) {
                     case "adauga_student":
                         String programStudent = date.get(1);
